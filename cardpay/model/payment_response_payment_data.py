@@ -39,7 +39,6 @@ class PaymentResponsePaymentData(object):
         "decline_code": "str",
         "decline_reason": "str",
         "id": "str",
-        "invalid_data": "list[str]",
         "is_3d": "bool",
         "note": "str",
         "rrn": "str",
@@ -56,7 +55,6 @@ class PaymentResponsePaymentData(object):
         "decline_code": "decline_code",
         "decline_reason": "decline_reason",
         "id": "id",
-        "invalid_data": "invalid_data",
         "is_3d": "is_3d",
         "note": "note",
         "rrn": "rrn",
@@ -74,7 +72,6 @@ class PaymentResponsePaymentData(object):
         decline_code=None,
         decline_reason=None,
         id=None,
-        invalid_data=None,
         is_3d=None,
         note=None,
         rrn=None,
@@ -91,7 +88,6 @@ class PaymentResponsePaymentData(object):
         self._decline_code = None
         self._decline_reason = None
         self._id = None
-        self._invalid_data = None
         self._is_3d = None
         self._note = None
         self._rrn = None
@@ -115,8 +111,6 @@ class PaymentResponsePaymentData(object):
             self.decline_reason = decline_reason
         if id is not None:
             self.id = id
-        if invalid_data is not None:
-            self.invalid_data = invalid_data
         if is_3d is not None:
             self.is_3d = is_3d
         if note is not None:
@@ -311,29 +305,6 @@ class PaymentResponsePaymentData(object):
         """
 
         self._id = id
-
-    @property
-    def invalid_data(self):
-        """Gets the invalid_data of this PaymentResponsePaymentData.  # noqa: E501
-
-        Invalid card or billing data  # noqa: E501
-
-        :return: The invalid_data of this PaymentResponsePaymentData.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._invalid_data
-
-    @invalid_data.setter
-    def invalid_data(self, invalid_data):
-        """Sets the invalid_data of this PaymentResponsePaymentData.
-
-        Invalid card or billing data  # noqa: E501
-
-        :param invalid_data: The invalid_data of this PaymentResponsePaymentData.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._invalid_data = invalid_data
 
     @property
     def is_3d(self):

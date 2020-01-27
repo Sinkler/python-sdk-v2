@@ -1,4 +1,4 @@
-# Cardpay APIv3 Python SDK
+# Cardpay APIv2 Python SDK
 
 You can sign up for a Cardpay account at https://www.cardpay.com.
 
@@ -9,7 +9,7 @@ Please follow the [installation](#installation) instruction and take a look at [
 
 ## Requirements
 
-Python 3+
+Python 2
 
 ## Installation & Usage
 ### pip install
@@ -17,12 +17,7 @@ Python 3+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/cardpay/python-sdk-v3.git --upgrade
-```
-or
-
-```sh
-pip install 'cardpay>=1.9.6.4' --upgrade
+pip install git+https://github.com/Sinkler/python-sdk-v2.git --upgrade
 ```
 
 Then import the package:
